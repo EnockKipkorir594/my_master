@@ -9,12 +9,13 @@
         <h1 style="text-align: center;"> Update Task </h1>
         
         <div class="Form">
-        <form action="/update/{{ task.id }}" method="PUT">
+        <form action="/update/{{ task.id }}" method="POST">
             <input type="text" name="content" id="content" value="{{ task.content }}">
             <input type="submit" value="Update Task">
 
         </form>
         </div>
+        <a href="/home" class="btn btn-primary" role="button">Home</a>
     </div>
     
 {% endblock %}
